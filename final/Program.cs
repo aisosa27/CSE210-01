@@ -27,7 +27,7 @@ public static class Program
                 }
             }
 
-            var monitorKeyPresses = MonitorKeyPresses();
+            var key = MonitorKeyPresses();
 
             do
             {
@@ -46,7 +46,7 @@ public static class Program
             }
 
             cts.Cancel();
-            await monitorKeyPresses;
+            await key;
         }
     }
 }
